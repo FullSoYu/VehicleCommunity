@@ -6,10 +6,11 @@ body {
 }
 .TopBar_Body_Box {
   position: relative;
-  height: 100px;
+  height: 80px;
   width: 100%;
   display: inline-block;
   top: 0;
+  z-index: 10;
 }
 .TopBar_logo_Box {
   position: relative;
@@ -26,22 +27,24 @@ body {
   width: 180px;
 }
 .TopBar_Menu_Box {
-  font-size: 1rem;
+  font-size: 0.8rem;
   position: relative;
   display: inline-block;
   width: 50%;
   background-color: black;
   height: 100%;
   white-space: nowrap;
+
   // top: -18px;
-  text-align: center;
+  // text-align: center;
 }
 .TopBar_Menu_Common_Style {
   position: relative;
   display: inline-block;
-  width: calc(100% / 6);
+  width: calc(100% / 7);
   height: 100%;
   vertical-align: middle;
+  top: -10px;
 }
 .TopBar_Menu_Common_Style > a {
   position: relative;
@@ -50,27 +53,90 @@ body {
   padding: 35px;
   top: 40px;
 }
+
+.TopBar_Menu_Common_Style:hover > a > span {
+  color: #3ab2ff;
+}
+
 .TopBar_Menu_Common_Style > a > span > ul {
   position: relative;
   list-style: none;
   display: none;
-}
-.TopBar_Menu_Common_Style > a > span:hover {
-  color: #3ab2ff;
-}
-
-.TopBar_Menu_Common_Style > a > span:hover > ul {
-  position: relative;
-  background-color: black;
-  display: block;
+  width: inherit;
+  width: 150px;
 }
 
 .TopBar_Menu_Common_Style > a > span > ul > li > a {
+  position: relative;
   text-decoration: none;
-  color: white;
-  font-size: 0.8rem;
+  color: #cbcccd;
+  font-size: 0.7rem;
 }
-.TopBar_Menu_Common_Style > a > span > ul > li > a > span:hover {
-  color: #3ab2ff;
+
+.TopBar_Menu_Common_Style:hover > a > span > ul {
+  position: relative;
+  top: 16px;
   display: block;
+  background-color: black;
+}
+.TopBar_Menu_Common_Style:hover > a > span > ul > li {
+  height: 36px;
+}
+.TopBar_Menu_Common_Style > a > span > ul > li:hover > a {
+  color: #3ab2ff;
+}
+
+.login_Button {
+  position: relative;
+  top: -6px;
+  left: -18px;
+  width: 12px;
+  height: 12px;
+  background-color: #3ab2ff;
+  border-radius: 34px;
+  padding: 7px;
+}
+.Search_Con {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.Search_Box1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Search_Box2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3ab2ff;
+  animation: moon 1s;
+}
+
+@keyframes moon {
+  0% {
+    top: -100%;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.TopBar_Search_Box,
+.TopBar_SignupOrLogin_Box {
+  left: 10px;
+}
+.TopBar_divion_icon {
+  position: absolute;
+  font-size: 1rem;
+  // color: yellow;
+  left: 50px;
+  top: -10px;
 }

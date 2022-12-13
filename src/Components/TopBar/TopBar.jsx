@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "../../Style/TopBar/TopBar.scss";
+import ModalBasic from "../Modal/ModalBasic";
 
 const TopBar = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const showModal = () => {
+    setModalOpen(true);
+  };
+
   return (
     <>
       <div className="TopBar_Body_Box">
@@ -181,15 +188,18 @@ const TopBar = () => {
               />
             </a>
           </div>
-          <div className="TopBar_divion_icon">|</div>
           <div className="TopBar_SignupOrLogin_Box TopBar_Menu_Common_Style modal">
-            <a href="/">
+            <button
+              className="TopBar_SignupOrLogin_Box_Button"
+              onClick={showModal}
+            >
               <img
                 className="login_Button"
                 src="https://www.autoview.co.kr/img/common/ico_logout.png"
                 alt=""
               />
-            </a>
+            </button>
+            {modalOpen && <ModalBasic setModalOpen={setModalOpen} />}
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import "../../Style/Modal/ModalBasic.scss";
 
 function ModalBasic({ setModalOpen }) {
   const closeModal = () => {

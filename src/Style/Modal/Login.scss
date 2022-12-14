@@ -1,0 +1,108 @@
+.Login_Modal_Box {
+  position: fixed;
+  width: 500px;
+  height: 600px;
+  top: 10%;
+  left: 40%;
+  margin: 0 auto;
+  border: solid 1px #d9d9d9;
+  text-align: center;
+  z-index: 99;
+  background-color: white;
+}
+.Login_Input_Box_Title > img {
+  position: relative;
+  top: 20px;
+  width: 200px;
+}
+
+.Con_Login_Input_Box {
+  position: relative;
+  top: 60px;
+  //   border: solid 1px red;
+  height: 120px;
+}
+
+.Login_Box_Input_Common_Style {
+  position: relative;
+  font-size: 1rem;
+  width: 440px;
+  height: 40px;
+  border: none;
+  border: solid 1px #d9d9d9;
+  margin: 7px 0;
+  padding: 0 10px;
+}
+.Login_Box_Input_Common_Style::placeholder {
+  color: #999;
+}
+.Login_Button {
+  position: relative;
+  top: 60px;
+}
+.Login_Button {
+  font-size: 1rem;
+  //   position: relative;
+  padding: 14px 210px;
+  background-color: #d9d9d9;
+  color: white;
+  border: none;
+  border-radius: 100px;
+}
+.Con_Etc_Box {
+  font-size: 0.8rem;
+  position: relative;
+  top: 70px;
+}
+.Content_Etc_Common_Style {
+  display: inline-block;
+  margin: 0 8px;
+  color: #999;
+}
+.Login_Sns_Title_Area {
+  position: relative;
+  top: 100px;
+  width: 460px;
+  height: 200px;
+  border-bottom: solid 1px #d9d9d9;
+  border-top: solid 1px #d9d9d9;
+  text-align: center;
+  margin: 0 auto;
+}
+.Login_Sns_Title_Area > strong {
+  position: relative;
+  font-size: 0.8rem;
+  color: #d9d9d9;
+  padding: 0 10px;
+  top: -12px;
+  background-color: white;
+}
+.Login_Sns_Title_Area > p {
+  position: relative;
+  top: 120px;
+  font-size: 0.8rem;
+  color: #d9d9d9;
+}
+.Login_Sns_Title_Area > div {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding: 0 10px;
+  border: #999 1px solid;
+  margin-top: 10px;
+}
+
+// .Login_Sns_Title_Area > a {
+//   position: relative;
+//   display: inline-block;
+// }
+// .icon_naver {
+//   position: relative;
+//   margin: 9px auto;
+//   display: block;
+//   width: 18px;
+//   height: 17px;
+//   background: url("https://fem.encar.com/static/images/spr/spr_login_sns_icon.png?2008191022")
+//     0 -97px no-repeat;
+//   background-size: 143.5px;
+// }

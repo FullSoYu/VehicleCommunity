@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../Style/TopBar/TopBar.scss";
-import ModalBasic from "../Modal/ModalBasic";
+import Login from "../Modal/Login";
 
 const TopBar = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -15,7 +15,7 @@ const TopBar = () => {
         <div className="TopBar_logo_Box">
           <img
             className="TopBar_logo_Box_Img"
-            src="https://www.autoview.co.kr/img/logo.png"
+            src="https://ifh.cc/g/74JzFs.png"
             alt=""
           />
         </div>
@@ -199,7 +199,7 @@ const TopBar = () => {
                 alt=""
               />
             </button>
-            {modalOpen && <ModalBasic setModalOpen={setModalOpen} />}
+            {modalOpen && <Login setModalOpen={setModalOpen} />}
           </div>
         </div>
       </div>

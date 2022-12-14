@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ModalBasic from "./ModalBasic";
+import Login from "./Login";
 
 function Modal() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -11,7 +11,7 @@ function Modal() {
   return (
     <div>
       <button onClick={showModal}>모달 띄우기</button>
-      {modalOpen && <ModalBasic setModalOpen={setModalOpen} />}
+      {modalOpen && <Login setModalOpen={setModalOpen} />}
     </div>
   );
 }

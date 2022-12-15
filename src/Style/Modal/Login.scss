@@ -1,7 +1,7 @@
 .Login_Modal_Box {
   position: fixed;
   width: 500px;
-  height: 600px;
+  height: 700px;
   top: 10%;
   left: 40%;
   margin: 0 auto;
@@ -34,7 +34,7 @@
   padding: 0 10px;
 }
 .Login_Box_Input_Common_Style::placeholder {
-  color: #999;
+  color: #d9d9d9;
 }
 .Login_Button {
   position: relative;
@@ -63,7 +63,7 @@
   position: relative;
   top: 100px;
   width: 460px;
-  height: 200px;
+  height: 300px;
   border-bottom: solid 1px #d9d9d9;
   border-top: solid 1px #d9d9d9;
   text-align: center;
@@ -77,32 +77,71 @@
   top: -12px;
   background-color: white;
 }
-.Login_Sns_Title_Area > p {
+
+.Sns_Icons_Box {
   position: relative;
-  top: 120px;
-  font-size: 0.8rem;
-  color: #d9d9d9;
-}
-.Login_Sns_Title_Area > div {
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  padding: 0 10px;
-  border: #999 1px solid;
-  margin-top: 10px;
+  top: 30px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 0;
 }
 
-// .Login_Sns_Title_Area > a {
-//   position: relative;
-//   display: inline-block;
-// }
-// .icon_naver {
-//   position: relative;
-//   margin: 9px auto;
-//   display: block;
-//   width: 18px;
-//   height: 17px;
-//   background: url("https://fem.encar.com/static/images/spr/spr_login_sns_icon.png?2008191022")
-//     0 -97px no-repeat;
-//   background-size: 143.5px;
-// }
+.Sns_Button_Common_Style {
+  position: relative;
+  width: 105px;
+  height: 70px;
+  vertical-align: middle;
+  background-color: white;
+  border: solid 1px #999;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: bold;
+}
+
+.Sns_Button_Common_Style:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.Sns_Button_Common_Style:nth-child(3) {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.Sns_Icons_Common_Style {
+  background-image: url("https://fem.encar.com/static/media/spr_login_sns_icon.dcbf02f910c573e04674.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 170px;
+  height: 40px;
+  width: 38px;
+  margin: 0 auto;
+}
+
+.Sns_Icons_Naver {
+  background-position: 61.2% 21.8%;
+}
+.Sns_Icons_Kakao {
+  background-position: 54.7% 62%;
+}
+.Sns_Icons_Google {
+  background-position: 26.9% 62.1%;
+}
+.Sns_Icons_Apple {
+  background-position: -1% 62%;
+}
+
+.Login_Sns_Title_Area > p {
+  position: relative;
+  top: 15px;
+  font-size: 0.8rem;
+  color: #d9d9d9;
+  font-weight: bold;
+}
+.Login_Box_Footer {
+  position: relative;
+  font-size: 0.6rem;
+  color: #999;
+  top: 100px;
+}

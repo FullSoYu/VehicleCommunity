@@ -89,7 +89,7 @@ body {
 .TopBar_Menu_Common_Style > a > span > ul > li:hover > a {
   color: #3ab2ff;
 }
-.TopBar_SignupOrLogin_Box_Button {
+.TopBar_SignupOrLogin_Box_Btn {
   position: relative;
   all: unset;
 }
@@ -104,38 +104,6 @@ body {
   border-radius: 34px;
   padding: 7px;
 }
-// .Search_Con {
-//   position: relative;
-//   width: 100%;
-//   height: 170px;
-//   overflow: hidden;
-// }
-
-// .Search_Box1 {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .Search_Box2 {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   background-color: #3ab2ff;
-//   animation: moon 1s;
-// }
-
-// @keyframes moon {
-//   0% {
-//     top: -100%;
-//     opacity: 0;
-//   }
-
-//   100% {
-//     top: 0;
-//     opacity: 1;
-//   }
-// }
 
 .TopBar_Search_Box,
 .TopBar_SignupOrLogin_Box {
@@ -144,7 +112,13 @@ body {
 .TopBar_divion_icon {
   position: absolute;
   font-size: 1rem;
-  // color: yellow;
   left: 50px;
   top: -10px;
+}
+.ReactModal__Content {
+  position: relative;
+  width: 600px;
+  height: 720px;
+  margin: 0 auto;
+  // border: 1px solid white;
 }

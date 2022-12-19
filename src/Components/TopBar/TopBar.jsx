@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../../Style/TopBar/TopBar.scss";
 import Login from "../Modal/Login";
+import Modal from "react-modal";
 
 const TopBar = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
   const showModal = () => {
@@ -190,8 +192,8 @@ const TopBar = () => {
           </div>
           <div className="TopBar_SignupOrLogin_Box TopBar_Menu_Common_Style modal">
             <button
-              className="TopBar_SignupOrLogin_Box_Button"
-              onClick={showModal}
+              className="TopBar_SignupOrLogin_Box_Btn"
+              onClick={() => setModalIsOpen(true)}
             >
               <img
                 className="login_Button"
@@ -199,14 +201,15 @@ const TopBar = () => {
                 alt=""
               />
             </button>
-            {modalOpen && <Login setModalOpen={setModalOpen} />}
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={() => setModalIsOpen(false)}
+            >
+              <Login />
+            </Modal>
           </div>
         </div>
       </div>
-      {/* <div className="Search_Con">
-        <div className="Search_Box1"></div>
-        <div className="Search_Box2"></div>
-      </div> */}
     </>
   );
 };

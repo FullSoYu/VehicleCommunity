@@ -1,15 +1,12 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import "../../Style/Modal/Login.scss";
-function Login({ setModalOpen }) {
-  const closeModal = () => {
-    setModalOpen(false);
-  };
 
+const Login = () => {
   return (
     <div className="Login_Modal_Box">
       <div className="Login_Input_Box">
         <div className="Login_Input_Box_Title">
-          <img src="https://ifh.cc/g/74JzFs.png" onClick={closeModal} alt="" />
+          <img src="https://ifh.cc/g/74JzFs.png" alt="" />
         </div>
         <div className="Con_Login_Input_Box">
           <div className="Login_Id_Input_Box Login_Box_Common_Style">
@@ -62,6 +59,6 @@ function Login({ setModalOpen }) {
       <p className="Login_Box_Footer">ⓒ Vehicle Community</p>
     </div>
   );
-}
+};
 
 export default Login;
